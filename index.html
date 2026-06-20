@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaik Farhan – Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Portfolio Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ─────────────────────────────────────────────────────── -->
+  <!-- SIDEBAR                                                 -->
+  <!-- ─────────────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">Shaik <span>Farhan</span></div>
+
+    <nav class="sidebar-nav" id="sidebarNav">
+      <a class="sidebar-link active" href="#about"><i class="bi bi-person-fill"></i><span>About</span></a>
+      <a class="sidebar-link" href="#skills"><i class="bi bi-code-slash"></i><span>Skills</span></a>
+      <a class="sidebar-link" href="#education"><i class="bi bi-mortarboard-fill"></i><span>Education</span></a>
+      <a class="sidebar-link" href="#projects"><i class="bi bi-stack"></i><span>Projects</span></a>
+      <a class="sidebar-link" href="#achievements"><i class="bi bi-trophy-fill"></i><span>Achievements</span></a>
+      <a class="sidebar-link" href="#certifications"><i class="bi bi-patch-check-fill"></i><span>Certifications</span></a>
+      <a class="sidebar-link" href="#contact"><i class="bi bi-envelope-fill"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="theme-toggle" id="themeToggle">
+        <button class="theme-btn" data-theme-btn="light" aria-label="Light mode"><i class="bi bi-sun-fill"></i></button>
+        <button class="theme-btn active" data-theme-btn="dark" aria-label="Dark mode"><i class="bi bi-moon-fill"></i></button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ─────────────────────────────────────────────────────── -->
+  <!-- MAIN CONTENT                                            -->
+  <!-- ─────────────────────────────────────────────────────── -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
+    <section class="content-section" id="about">
+      <div class="about-hero">
+        <div class="about-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-circle">SF</div>
+        </div>
+
+        <div class="about-info">
+          <div class="hero-pill">
+            <div class="dot"></div>
+            Open to Internships &amp; Full-Time Roles
+          </div>
+
+          <h1 class="gradient-text">Shaik Farhan</h1>
+          <h2 class="role-typing"><span id="typedRole"></span><span class="type-cursor">|</span></h2>
+
+          <p class="hero-tagline">
+            Ambitious Information Science Engineering student with hands-on experience in real-world
+            technology projects. Secured ₹5 Lakhs funding under NAIN 2.0 for an innovative healthcare
+            project. Passionate about developing impactful and scalable solutions through innovation
+            and technology.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#contact" class="btn-glow">
+              <i class="bi bi-chat-dots-fill"></i> Contact Me
+            </a>
+            <a href="https://drive.google.com/file/d/1kXOqIM7Pjo7qb6oyN-9gMZCJ63fbWCnk/view?usp=drive_link" class="btn-ghost">
+              <i class="bi bi-file-earmark-person"></i> View Resume
+            </a>
+          </div>
+
+          <div class="follow-row">
+            <span class="follow-line"></span>
+            <span class="follow-label">Follow me on</span>
+            <div class="follow-icons">
+              <a href="https://github.com/Mrshaik31" target="_blank" class="social-circle" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/shaik-farhan/" target="_blank" class="social-circle" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.behance.net/shaikfarhan7" target="_blank" class="social-circle" aria-label="Behance"><i class="bi bi-behance"></i></a>
+              <a href="https://www.instagram.com/engineer_whocaptur3" target="_blank" class="social-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+             
+          </div>
+        </div>
+      </div>
+
+      <div class="about-bio">
+        <div class="section-label">About Me</div>
+        <p>
+         I am a motivated and ambitious engineering graduate who enjoys turning ideas into meaningful solutions. I am passionate about innovation, problem-solving, and creating projects that address real-world challenges. My journey has been shaped by hands-on project development, teamwork, and a constant desire to learn and improve. One of my notable achievements includes securing ₹5 Lakhs in funding under Karnataka's NAIN 2.0 initiative for an innovative healthcare project, reflecting my commitment to developing impactful technology-driven solutions.I believe in continuous growth, embracing new challenges, and building solutions that create value for people and society. My goal is to contribute to forward-thinking organizations where I can make a meaningful impact while growing both personally and professionally.
+        </p>
+      </div>
+
+      <div class="row g-3 about-stats">
+        <div class="col-4">
+          <div class="glass-card text-center p-2">
+            <div class="stat-val">₹5L</div>
+            <div class="stat-lbl">NAIN 2.0 Funding</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="glass-card text-center p-2">
+            <div class="stat-val">8.1</div>
+            <div class="stat-lbl">CGPA</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="glass-card text-center p-2">
+            <div class="stat-val">2+</div>
+            <div class="stat-lbl">Major Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+
+
+    <!-- ── SKILLS ─────────────────────────────────────────── -->
+    <section class="content-section" id="skills">
+      <div class="section-label">What I work with</div>
+      <h2 class="mb-5">Skills &amp; Expertise</h2>
+
+      <div class="row g-4">
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">Frontend</div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">React.js</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">Backend</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express.js</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">Databases</div>
+            <div class="skill-tags">
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">Python Libraries</div>
+            <div class="skill-tags">
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Librosa</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">Tesseract OCR</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">Tools &amp; Platforms</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="skill-group">
+            <div class="skill-group-title">UI/UX Design</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">Prototyping</span>
+              <span class="skill-tag">Usability Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+
+
+    <!-- ── EDUCATION ──────────────────────────────────────── -->
+    <section class="content-section" id="education">
+      <div class="section-label">Academic Background</div>
+      <h2 class="mb-5">Education</h2>
+
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <h3>Mangalore Institute of Technology and Engineering</h3>
+            <p>Bachelor of Engineering in Information Science · 2020 – 2026 · CGPA: 8.1</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-journal-bookmark-fill"></i></div>
+            <h3>Diamond College</h3>
+            <p>Pre-University (PU) · 2020 – 2022 · Percentage: 85.5%</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-book-fill"></i></div>
+            <h3>Diamond School</h3>
+            <p>Secondary School (SSLC) · 2020 · Percentage: 78.56%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+
+
+    <!-- ── PROJECTS ───────────────────────────────────────── -->
+    <section class="content-section" id="projects">
+      <div class="section-label">What I've built</div>
+      <h2 class="mb-5">Projects</h2>
+
+      <div class="row g-4">
+
+        <!-- Air-Pulse Wireless Stethoscope -->
+        <div class="col-sm-6">
+          <div class="project-card">
+            <div class="project-img p-grad-1">
+              <div class="project-img-inner">
+                <i class="bi bi-heart-pulse-fill" style="font-size:2.2rem; color:#a78bfa;"></i>
+                <span style="font-size:11px; color:#6b6b8a; font-family:var(--mono);">Healthcare AI</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Air-Pulse Wireless Stethoscope</h3>
+              <p>AI-based system to classify heart sounds from spectrogram data using ML pipelines, with confusion matrix analysis for reliable cardiac anomaly detection. Funded ₹5 Lakhs under NAIN 2.0.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Librosa</span>
+                <span class="tech-tag">Machine Learning</span>
+              </div>
+              <a href="#" class="project-link"><i class="bi bi-arrow-up-right-square"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- UX Review Tool -->
+        <div class="col-sm-6">
+          <div class="project-card">
+            <div class="project-img p-grad-2">
+              <div class="project-img-inner">
+                <i class="bi bi-vector-pen" style="font-size:2.2rem; color:#38bdf8;"></i>
+                <span style="font-size:11px; color:#3a5a6a; font-family:var(--mono);">UI/UX Tool</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>UX Review Tool</h3>
+              <p>Responsive web application enabling users to upload landing page screenshots and receive automated UI/UX recommendations, with dark mode and animated transitions.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">OpenCV</span>
+              </div>
+              <a href="#" class="project-link"><i class="bi bi-arrow-up-right-square"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IKEA Clone Website — UI/UX Design -->
+        <div class="col-sm-6">
+          <div class="project-card">
+            <div class="project-img p-grad-3">
+              <div class="project-img-inner">
+                <i class="bi bi-house-door-fill" style="font-size:2.2rem; color:#7ee787;"></i>
+                <span style="font-size:11px; color:#5a7a5a; font-family:var(--mono);">UI/UX Design</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>IKEA Clone Website — UI/UX Design</h3>
+              <p>Pixel-perfect, responsive clone of the IKEA website. Conducted competitive UX analysis, created wireframes and high-fidelity Figma mockups (homepage, product listing, product detail, cart), fully responsive across desktop/mobile.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Wireframing</span>
+                <span class="tech-tag">UX Research</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+              <a href="https://www.behance.net/gallery/226484527/IKEA-Website" class="project-link"><i class="bi bi-arrow-up-right-square"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Air-Pulse Smart Stethoscope — App UI/UX Design -->
+        <div class="col-sm-6">
+          <div class="project-card">
+            <div class="project-img p-grad-4">
+              <div class="project-img-inner">
+                <i class="bi bi-phone-fill" style="font-size:2.2rem; color:#f5a3a3;"></i>
+                <span style="font-size:11px; color:#8a5a5a; font-family:var(--mono);">App UI/UX Design</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Air-Pulse Smart Stethoscope — App UI/UX Design</h3>
+              <p>Designed the mobile app interface for an AI-powered wireless stethoscope, including onboarding, heart-sound visualization, and diagnostic result screens. Conducted user research with patients and healthcare workers. Funded ₹5 Lakhs (NAIN 2.0).</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Prototyping</span>
+                <span class="tech-tag">Usability Testing</span>
+                <span class="tech-tag">User Research</span>
+              </div>
+              <a href="#" class="project-link"><i class="bi bi-arrow-up-right-square"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+
+
+    <!-- ── ACHIEVEMENTS ───────────────────────────────────── -->
+    <section class="content-section" id="achievements">
+      <div class="section-label">Recognition</div>
+      <h2 class="mb-4">Achievements &amp; Activities</h2>
+
+      <div class="featured-card">
+        <div class="featured-body" style="padding: 1rem 2.2rem;">
+          <ul class="feature-list">
+            <li>
+              <i class="bi bi-trophy-fill"></i>
+              <span><strong>1st Place – Final Year Project (ISE Branch):</strong> Secured 1st Place for "Cardio-Sense: Web-Based Heart Sound Classification Using Deep Learning," focused on AI-based heart sound classification for early detection of cardiac abnormalities.</span>
+            </li>
+            <li>
+              <i class="bi bi-trophy-fill"></i>
+              <span><strong>Winner – NAIN Ideathon:</strong> Secured ₹5 Lakhs funding from the Karnataka Government (New Age Innovation Network – NAIN 2.0) for developing the Smart Stethoscope project.</span>
+            </li>
+            <li>
+              <i class="bi bi-trophy-fill"></i>
+              <span><strong>Hackathon Participation:</strong> Contributed to national-level hackathons with a focus on collaborative problem-solving, team-based innovation, and rapid prototyping.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+
+
+    <!-- ── CERTIFICATIONS ─────────────────────────────────── -->
+    <section class="content-section" id="certifications">
+      <div class="section-label">Continuous Learning</div>
+      <h2 class="mb-5">Certifications &amp; Training</h2>
+
+      <div class="row g-3">
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-patch-check-fill"></i></div>
+            <h3>Deloitte Australia Data Analytics</h3>
+            <p>Job Simulation – Forage</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+            <h3>Patent Searching &amp; Drafting</h3>
+            <p>Workshop – Exposure to intellectual property, patent research, and drafting techniques</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-send-check-fill"></i></div>
+            <h3>Postman API Workshop</h3>
+            <p>API testing, documentation, and integration</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-gear-fill"></i></div>
+            <h3>DevOps Workshop</h3>
+            <p>CI/CD, version control, and automation tools</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <h3>Entrepreneurship Awareness</h3>
+            <p>Workshop on innovation and startup development</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="section-divider" />
+
+
+
+    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <section class="content-section" id="contact">
+      <div class="section-label">Let's talk</div>
+      <h2 class="mb-2">Get In Touch</h2>
+      <p style="color:var(--text-muted); font-size:14px; margin-bottom:2.2rem; max-width:400px;">
+        Looking for internship or full-time opportunities. Send a message and I'll get back to you within 24 hours.
+      </p>
+
+      <div class="contact-card">
+        <form id="contactForm" novalidate>
+          <div class="row g-3 mb-3">
+            <div class="col-sm-6">
+              <label for="name">Name</label>
+              <input class="form-ctrl" type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="col-sm-6">
+              <label for="email">Email</label>
+              <input class="form-ctrl" type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="message">Message</label>
+            <textarea class="form-ctrl" id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="bi bi-send-fill"></i> Send Message
+          </button>
+          <div id="formMsg" style="margin-top:1rem; font-size:13px; text-align:center; display:none;"></div>
+        </form>
+      </div>
+
+      <div class="d-flex flex-wrap gap-4 mt-4" style="font-size:13px; color:var(--text-muted);">
+        <span><i class="bi bi-envelope" style="color:var(--accent2);"></i>&nbsp; shaikfarhan3100@gmail.com</span>
+        <span><i class="bi bi-telephone" style="color:var(--accent2);"></i>&nbsp; +91-9741881031</span>
+      </div>
+
+      <div class="follow-icons mt-4">
+        <a href="https://github.com/Mrshaik31" target="_blank" class="social-circle" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/shaik-farhan/" target="_blank" class="social-circle" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.behance.net/shaikfarhan7" target="_blank" class="social-circle" aria-label="Behance"><i class="bi bi-behance"></i></a>
+        <a href="https://www.instagram.com/engineer_whocaptur3" target="_blank" class="social-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        
+      </div>
+    </section>
+
+
+    <!-- ── FOOTER ─────────────────────────────────────────── -->
+    <!-- <footer>
+      <p>© 2026 <span>Shaik Farhan</span> &nbsp;·&nbsp; Crafted with HTML, CSS, Bootstrap &amp; jQuery</p>
+    </footer> -->
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+  <!-- Portfolio Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
